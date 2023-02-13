@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming } from 'react-native-reanimated';
+import { useState } from 'react';
+import { Button, StyleSheet, View } from 'react-native';
 import ImagePlaceholder from './ImagePlaceholder';
 import ProfilePic from './ProfilePic';
 

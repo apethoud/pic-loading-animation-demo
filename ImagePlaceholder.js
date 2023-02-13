@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { useEffect } from 'react';
+import { StyleSheet } from 'react-native';
 import Animated, { useSharedValue, useAnimatedStyle, withRepeat, withTiming } from 'react-native-reanimated';
 
 export default function ImagePlaceholder() {
@@ -10,7 +10,7 @@ export default function ImagePlaceholder() {
   });
 
   function animatePlaceholder() {
-    placeholderOpacity.value = withRepeat(withTiming(1, { duration: 750 }), -1, true);
+    placeholderOpacity.value = withRepeat(withTiming(1, { duration: 500 }), -1, true);
   }
 
   useEffect(() => {
